@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ORDER SUMMARY</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="shortcut icon"
-      href="images/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="src/output.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/output.css">
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet">
 
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-   <body
-    class="bg-[url(/images/pattern-background-desktop.svg)] bg-no-repeat"
-  >
-    <div class="flex-row item-center justify-center w-1/5 mx-auto bg-white space-y-8">
-      <img src="/images/illustration-hero.svg" alt="hero" />
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+  rel="stylesheet">
 
-      <div class="space-y-6">
-        <h1 class="font-bold text-2xl">Order Summary</h1>
-
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-        <div> 
-            <img src="images/icon-music.svg" alt="music">
-            Annual Plan $59.99/year
-            <p class="underline text-green-500">Change</p>
+  <title>Order Summary</title>
+</head>
+  <body class=" bg-[url(/images/pattern-background-desktop.svg)] min-h-[100vh] font-[Red-Hat-Display] bg-no-repeat bg-amber-100">
+   <div class="w-1/5 my-auto mx-auto bg-white space-y-6 pb-7 sm:mx-6 rounded-xl">
+    
+    <img src="images/illustration-hero.svg" alt="first img" class="mt-6 rounded-xl">
+    
+      <h1 class="font-bold text-2xl flex justify-center">Order Summary</h1>
+        <div class="flex justify-center items-center">
+          <p class="text-center text-gray-600 px-3">
+           You can now listen to millions of songs, audiobooks.
+          and podcasts on any device anywhere you like!
+          </p>
         </div>
-        <div class="bg">Proceed to Payment</div>
-      </div>
+
+    <div class="hover:cursor-pointer flex justify-center bg-gray-100 mx-auto py-2 w-[280px] rounded-sm"> 
+      <img src="images/icon-music.svg" alt="music" class="pr-3 size-[30]">
+       <p class="text-center pr-8.5">
+         <span class="block font-bold">Annual Plan</span>  
+         <span class="block text-gray-500"> $59.99/year</span> 
+       </p>
+       <p class="underline py-3 text-blue-500 ">Change</p>
+
     </div>
+      <div class="shadow-md shadow-gray-400 p-10 mx-auto py-2 rounded-xl bg-blue-700 text-white w-[280px]">
+        <p class="text-center ov">Proceed to Payment</p>
+      </div>
+        <p class="flex justify-center text-gray-500 cou">Cancel Order</p>
+       
+     </div>
+     <br>
+     <br>
   </body>
 </html>
